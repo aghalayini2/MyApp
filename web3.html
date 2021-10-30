@@ -3,16 +3,13 @@
 <head>
   <script type="text/javascript" src="./web3.min.js"></script>
   <script type="text/javascript">
-    var web3 = new Web3();
-    web3.setProvider(
-      // geth instance address
-      new web3.providers.HttpProvider("https://rinkeby.infura.io/v3/97c0bfa14cfd43aca999f780e66a743f"));
+    import web3 from 'https://cdn.skypack.dev/web3';
+    // add your code here!
+    // see https://www.skypack.dev/view/web3 for README
+    const ethNetwork = "https://rinkeby.infura.io/v3/97c0bfa14cfd43aca999f780e66a743f";
+    const Web3 = new web3(new web3.providers.HttpProvider(ethNetwork));
   </script>
 </head>
 <body>
-
-<h1>This is a Heading</h1>
-<p>This is a paragraph.</p>
-
 </body>
 </html>
